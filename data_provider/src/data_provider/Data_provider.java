@@ -55,7 +55,7 @@ public class Data_provider extends JFrame {
                         } // fim do try
                         catch (IOException ioException)
                         {
-                            displayMessage(ioException.toString() + "\n");
+                            displayMassage(ioException.toString() + "\n");
                             ioException.printStackTrace();
                         } // fim do catch
                     } // fim do método actionPerfomed
@@ -92,7 +92,7 @@ public class Data_provider extends JFrame {
                 
                 //exibe o conteúdo do pacote
                 
-                displayMessage (
+                displayMassage(
                         "\nPacote recebido:" + 
                         "\ndoHost:"+ receivePacket.getAddress()+
                         "\nPorta do Host:" + receivePacket.getPort() +
@@ -103,7 +103,7 @@ public class Data_provider extends JFrame {
         
             catch (IOException exception)
             {
-                displayMessage(exception.toString() +  "\n");
+                displayMassage(exception.toString() +  "\n");
                 exception.printStackTrace();
             } // fim do catch
         } // fim do while
