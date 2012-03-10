@@ -26,7 +26,8 @@ public class ClientUDP implements Runnable {
         printMessage(this.name, "iniciando.");
     }
 
-    /* Método para imprimir o nome do ator e sua ação */
+    /* Método para imprimir o nome do ator e sua ação,
+     * neste caso, o ator será Client */
     private void printMessage(String who, String action) {
         System.out.printf("%s:>%s\n.", who, action);
     }
