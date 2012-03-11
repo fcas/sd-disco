@@ -72,6 +72,5 @@ public class DList {
 	/* Insere uma nova discografia no fim da lista */
 	public void addLast(DNode v){
 		addBefore(cauda,v); 
-	}
-	
+	}	
 }
