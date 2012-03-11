@@ -17,7 +17,7 @@ public class ServerUDP {
 
         /*Constrói o DatagramSocket ligado a porta getLocalPort().*/
 
-        s = new DatagramSocket(6783);
+        s = new DatagramSocket(6789);
         System.out.println("Servidor: aguardando pedido na porta "+s.getLocalPort());
 
         /*Looping*/
