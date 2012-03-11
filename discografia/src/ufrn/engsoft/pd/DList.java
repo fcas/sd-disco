@@ -20,6 +20,19 @@ public class DList {
 	
 	public boolean isEmpty(){ return (size==0);}
 	
+	/*Retorna o primeiro nó*/
+	public DNode getFirst() throws IllegalStateException {
+		if (isEmpty()) throw new IllegalStateException ("Não há discografias cadastradas");
+		return cabeca.getNext();
+	}
+	
+	/*Retorna o último nó*/
+	
+	public DNode getLast() throws IllegalStateException {
+		if (isEmpty()) throw new IllegalStateException ("Não há discografias cadastradas"); 
+		return cauda.getPrev(); 
+	}
+	
 	
 	
 }
